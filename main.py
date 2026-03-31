@@ -1,7 +1,5 @@
 from tkinter import *
 import storage
-import graphs
-from graphs import Graph
 
 #shows elements on the first screen
 def data_on_screen():
