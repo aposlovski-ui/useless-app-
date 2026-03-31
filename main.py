@@ -39,9 +39,7 @@ def close_window(new_window):
     delete_button.configure(state=ACTIVE)
     edit_button.configure(state=ACTIVE)
 
-    for i in range(3):
-        a.append(Graph('aaa'))
-    print(a)
+    
 
 # creates the edit window
 def edit():
