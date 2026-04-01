@@ -1,5 +1,7 @@
 from tkinter import *
 import storage
+import graphs
+from graphs import Graph
 
 #shows elements on the first screen
 def data_on_screen():
@@ -118,6 +120,12 @@ def enter_button(a, b, new_window, entry_t1, entry_t2, entry_t3, entry_t4):
     delete_button.configure(state=ACTIVE)
     edit_button.configure(state=ACTIVE)
 
+#makes fancy tables
+def fancy_table():
+    if listbox.curselection():
+        a = Graph(listbox.get(listbox.curselection()))
+        Graph.data_to_process = storage.on_file
+        #print(Graph.data_to_process)
 
 window = Tk()
 window.title('Прикорм')
